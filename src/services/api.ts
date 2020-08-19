@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const API = {
-  URL: "https://tender-mclean-00a2bd.netlify.app/mobile/movies.json",
-};
+const api = axios.create({
+  baseURL: "http://localhost:3333",
+});
 
-export default API;
+export default api;
